@@ -40,8 +40,8 @@
 "type.builtin" = { fg = "#569CD6" }
 
 # Stringi ('tekst') -> Czerwonawy / Rdzawy
-# SSMS Dark używa koloru "Salmon", który wpada w czerwień
-"string" = { fg = "#D69D85" }
+# SSMS Dark (User preference: Red hue like Classic SSMS)
+"string" = { fg = "#FF8080" }
 "string.regexp" = { fg = "#FF0000" } # Mocna czerwień dla specjalnych
 
 # Komentarze -> Zieleń
