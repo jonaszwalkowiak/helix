@@ -1,0 +1,10 @@
+# theme = "keyb1nd"
+# theme = "ssms"
+
+[editor]
+line-number = "relative"
+mouse = true
+true-color = true
+
+# pip install pyright
+# pip install ruff

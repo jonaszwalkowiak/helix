@@ -1,0 +1,65 @@
+# --- Interfejs (UI - VS 2022 Dark Style) ---
+"ui.background" = { bg = "#1E1E1E" }
+"ui.text" = { fg = "#D4D4D4" }
+"ui.text.focus" = { fg = "#FFFFFF" }
+"ui.menu" = { fg = "#D4D4D4", bg = "#252526" }
+"ui.menu.selected" = { fg = "#FFFFFF", bg = "#04395e" }
+"ui.linenr" = { fg = "#858585" }
+"ui.linenr.selected" = { fg = "#C6C6C6" }
+"ui.cursor" = { fg = "#1E1E1E", bg = "#AEAFAD" }
+"ui.cursor.primary" = { fg = "#1E1E1E", bg = "#FFFFFF" }
+"ui.selection" = { bg = "#264F78" }
+"ui.statusline" = { fg = "#FFFFFF", bg = "#007ACC" }
+"ui.statusline.inactive" = { fg = "#D4D4D4", bg = "#2D2D2D" }
+"ui.help" = { fg = "#D4D4D4", bg = "#252526" }
+"ui.window" = { fg = "#858585" }
+
+# --- Składnia SQL (Specyfika SSMS) ---
+
+# Słowa kluczowe (SELECT, FROM, AS) -> Niebieski
+"keyword" = { fg = "#569CD6" }
+"keyword.control" = { fg = "#569CD6" } # W SQL IF/ELSE też są często niebieskie
+"keyword.operator" = { fg = "#B4B4B4" } # AND, OR, LIKE - szare/białe
+
+# Funkcje Systemowe i Wbudowane (SUM, ISNULL, CAST) -> Różowy / Magenta
+# To jest ten kluczowy kolor "Pink", o który pytałeś
+"function" = { fg = "#FF80FF" } 
+"function.builtin" = { fg = "#FF80FF" }
+"function.macro" = { fg = "#FF80FF" }
+
+# Zmienne
+"variable" = { fg = "#D4D4D4" } # Zwykłe kolumny/zmienne często są po prostu jasne
+"variable.parameter" = { fg = "#D4D4D4" } # @Parametr
+# Zmienne globalne (@@ROWCOUNT, @@IDENTITY) -> Różowy / Magenta
+"variable.builtin" = { fg = "#FF80FF" }
+
+# Typy danych (INT, VARCHAR, DATETIME)
+# W SSMS często są Niebieskie (jak słowa kluczowe) lub Turkusowe.
+# Ustawiam niebieski, żeby było jak w oryginale, ale można zmienić na #4EC9B0 (Teal)
+"type" = { fg = "#569CD6" } 
+"type.builtin" = { fg = "#569CD6" }
+
+# Stringi ('tekst') -> Czerwonawy / Rdzawy
+# SSMS Dark używa koloru "Salmon", który wpada w czerwień
+"string" = { fg = "#D69D85" }
+"string.regexp" = { fg = "#FF0000" } # Mocna czerwień dla specjalnych
+
+# Komentarze -> Zieleń
+"comment" = { fg = "#57A64A" }
+
+# Liczby -> Często białe lub jasnozielone w zależności od wersji
+"constant.numeric" = { fg = "#B5CEA8" }
+"constant" = { fg = "#D4D4D4" } 
+
+# Operatory i znaki interpunkcyjne -> Szare
+"operator" = { fg = "#B4B4B4" }
+"punctuation" = { fg = "#B4B4B4" }
+
+# Specjalne
+"special" = { fg = "#DCDCAA" }
+
+# --- Diagnostyka ---
+"error" = { fg = "#F48771" }
+"warning" = { fg = "#CCA700" }
+"info" = { fg = "#75BEFF" }
+"hint" = { fg = "#A0A0A0" }

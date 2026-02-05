@@ -1,0 +1,47 @@
+[[language]]
+name = "python"
+language-servers = [ "pyright", "ruff" ]
+auto-format = true
+
+[language-server.pyright.config.python.analysis]
+typeCheckingMode = "basic" 
+diagnosticMode = "openFilesOnly"
+
+[language-server.ruff]
+command = "ruff"
+
+[[language]]
+name = "sql"
+language-servers = [ "sql-language-server" ]
+
+[[language]]
+name = "yaml"
+auto-format = true
+language-servers = [ "yaml-language-server" ]
+
+[[language]]
+name = "dockerfile"
+language-servers = [ "dockerfile-language-server-nodejs" ]
+
+[[language]]
+name = "json"
+auto-format = true
+language-servers = [ "vscode-json-language-server" ]
+
+[language-server.dockerfile-language-server-nodejs]
+command = "docker-langserver"
+args = ["--stdio"]
+
+[language-server.vscode-json-language-server]
+command = "vscode-json-language-server"
+args = ["--stdio"]
+
+[language-server.sql-language-server]
+command = "sql-language-server"
+args = ["up", "--method", "stdio"]
+
+[[language]]
+name = "go"
+roots = ["go.work", "go.mod"]
+auto-format = true
+language-servers = [ "gopls", "golangci-lint-lsp" ]
